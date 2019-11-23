@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: block;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<title>STOP CYBERBULLYING</title>
+
+<div class="tab">
+	<button class="tablinks" onclick="openTab(event, 'What Is Cyberbullying?')">What Is Cyberbullying?</button>
+	<button class="tablinks" onclick="openTab(event, 'Success Stories')">Success Stories</button>
+	<button class="tablinks" onclick="openTab(event, 'Stats')">Stats</button>
+	<button class="tablinks" onclick="openTab(event, 'Help')">Help</button>
+	<button class="tablinks" onclick="openTab(event, 'Whats the Difference?')">Whats the Difference?</button>
+	</div>
+	
+	<div id="What Is Cyberbullying?" class="tabcontent">
+		<h3>What Is Cyberbullying</h3>
+		<p>Cyberbullying is the use of electronic communication to bully a person, typically by sending messages of an intimidating or threatening nature.</p>
+		</div>
+		
+	<div id="Success Stories" class="tabcontent">
+		<h3>Success Stories</h3>
+		<p>Some celebrities that were cyberbullied are Zayn Malik, Lorde, Jesy Nelson, Olly Alexander, Selena Gomez, Demi Lovato, Nicola Roberts, Emma Watson, Ruby Rose, Adele, Millie Bobby Brown, Zendaya Coleman, and Taylor Swift. Many of these people have suffered because of malicious comments but they tried their hardest to not listen and now they are very respected, so if you are being cyberbullied, just ignore them. They are just jealous. :3.</p>
+	</div>
+		
+	<div id="Stats" class="tabcontent">
+		<h3>Stats</h3>
+		<p>
+		<img src="https://cdn.broadbandsearch.net/blog/cyber-bullying-statistics/social-networks.jpg"
+		alt="Cyberbullying Stats"
+		style="width:600px;height600px;">
+		These are the websites where most cyberbullying takes place. Instagram is the highest while Twitter is the lowest.
+	</div>
+
+		
+	<div id="Help" class="tabcontent">
+		<h3>Help</h3>
+		<p> If you are being cyberbullied and you think that life isn't important anymore...DON'T THINK LIKE THAT!! Here are some websites and phone numbers that can help you through hard times. National Suicide Prevention Lifeline: 1-800-273-8255 Nacional de Prevencion del Suicidio: 1-888-628-9454 Options for Deaf + Hard of Hearing: 1-800-799-4889 Veterans Crisis Line: 1-800-273-8255 The Trevor Project For LGBTQ+ youth: 1-866-488-73865</p>
+		</div>
+	
+	
+	<div id="Whats the Difference?" class="tabcontent">
+		<h3>Whats The Difference??</h3>
+		<p>There are many differences between cyberbullying and traditional bullying. In traditional bullying, there is aggression and a need of power and contol while in cyberbullying there is still aggression but it is more subtle. If you cyberbullying someone anonymously, YoU ArE juST BEIng A COwARd!! You don't want people to blame you if anything happens to that person.</p>
+	</div>
+
+
+<script>
+function openTab(evt, topic) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(topic).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
